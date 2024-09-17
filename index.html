@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b19cd9; /* Light purple background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #b19cd9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 60px;
+            height: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-size: 18px;
+            color: #000;
+        }
+
+        input[type="text"], input[type="date"] {
+            padding: 8px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="BIS Logo" class="logo">
+            <h1>Fill this form to be part of BIS</h1>
+        </div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name">
+
+            <label for="contact">Contact Info:</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter contact no.">
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
